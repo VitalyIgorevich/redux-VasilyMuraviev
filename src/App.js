@@ -1,4 +1,5 @@
 import Likes from "./components/Likes";
+import store from "./Redux/store"
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <div className="card">
           <div className="card-image">
             <img src="./sea.jpg" alt="surfing" />
-            <Likes />
+            <Likes store={store}/>
           </div>
         </div>
       </div>
