@@ -10,8 +10,9 @@ function Likes(props) {
   }
 
   const mapStateToProps = (state) => {
+    const {likesReduser} = state;
     return {
-        likes: state.likes
+      likes: likesReduser.likes
     }
   }
 

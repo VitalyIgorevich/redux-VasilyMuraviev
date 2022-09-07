@@ -1,17 +1,17 @@
-import { createStore } from "redux";
+import {INCREMENT, DESCREMENT} from "../types.js"
 
 const initialState = {
-    likes: 13
+    likes: 0
 }
 
-const reduser = (state = initialState, action) => {
+const likesReduser = (state = initialState, action) => {
     switch(action.type) {
-        case "INCREMENT":
+        case INCREMENT:
             return {
                 ...state,
                 likes: state.likes + 1
             }
-            case "DECREMENT":
+            case DESCREMENT:
                 return {
                     ...state,
                     likes: state.likes - 1
@@ -19,9 +19,6 @@ const reduser = (state = initialState, action) => {
             default:
                 return state
     }
-    
 }
 
-const store = createStore(reduser)
-
-export default store;
+export default likesReduser;
