@@ -1,4 +1,4 @@
-import {INCREMENT, DESCREMENT} from "../types.js"
+import {INCREMENT, DECREMENT} from "../types.js"
 
 const initialState = {
     likes: 0
@@ -11,7 +11,7 @@ const likesReduser = (state = initialState, action) => {
                 ...state,
                 likes: state.likes + 1
             }
-            case DESCREMENT:
+            case DECREMENT:
                 return {
                     ...state,
                     likes: state.likes - 1
