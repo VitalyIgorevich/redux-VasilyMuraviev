@@ -1,4 +1,5 @@
 import Likes from "./components/Likes";
+import Title from "./components/Title";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <div className="card">
           <div className="card-image">
             <img src="./sea.jpg" alt="surfing" />
+            <Title />
             <Likes />
           </div>
         </div>
